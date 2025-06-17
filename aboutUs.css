@@ -1,0 +1,140 @@
+/* About Us Page Styles */
+#aboutUs .about-us-page {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background: rgb(246, 246, 249);
+  color: #333;
+}
+
+#aboutUs .content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Sticky Header */
+#aboutUs .header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+#aboutUs .header-icon {
+  font-size: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+  color: #555;
+}
+
+#aboutUs .header-icon i {
+  font-size: 20px;
+}
+
+#aboutUs .header-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 28px; /* To balance space for icon */
+}
+
+#aboutUs .section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: blue;
+  text-align: left;
+}
+
+#aboutUs .contact-card {
+  background-color: #f9f9f9;
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+#aboutUs .contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+}
+
+#aboutUs .contact-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#aboutUs .link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  padding: 18px 20px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+#aboutUs .link-card:active {
+  background-color: #e9e9e9;
+}
+
+#aboutUs .faq-item {
+  background-color: #f9f9f9;
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#aboutUs .faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#aboutUs .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+#aboutUs .faq-answer p {
+  margin: 0;
+  padding: 0 20px 18px;
+}
+
+#aboutUs .faq-item.open .faq-answer {
+  max-height: 200px;
+}
+
+#aboutUs .arrow-icon i {
+  font-size: 18px;
+  color: #888;
+  transition: transform 0.3s;
+}

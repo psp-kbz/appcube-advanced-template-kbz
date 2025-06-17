@@ -1,0 +1,34 @@
+{
+  "widgetApi": [
+    {
+      "name": "aboutUs"
+    }
+  ],
+  "widgetDescription": "",
+  "authorName": "",
+  "localFileBasePath": "",
+  "width": "",
+  "height": "",
+  "i18n": [
+    {
+      "name": "messages-en"
+    },
+    {
+      "name": "messages-zh"
+    }
+  ],
+  "requires": [
+    {
+      "name": "global_Vue3",
+      "version": "3.4.21"
+    },
+    {
+      "name": "global_Vue3I18n",
+      "version": "9.10.1"
+    },
+    {
+      "name": "global_ElementPlus",
+      "version": "2.6.0"
+    }
+  ]
+}

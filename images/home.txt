@@ -1,0 +1,39 @@
+username,client_id,client_secret
+liuyongfeng,36039ffba572cd604f95a4cb552a1183,fdcb14421bda6f0ab3f808f61220bda5a1e2c8c5ca5ae235
+
+
+ var name;                           
+			  var iWidth=500;                        
+			  var iHeight=570;                        
+			  var iTop = (window.screen.height-30-iHeight)/2;       //获得窗口的垂直位置;
+			  var iLeft = (window.screen.width-10-iWidth)/2;        //获得窗口的水平位置;
+			  window.open(url,name,'height='+iHeight+',innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top='+iTop+',left='+iLeft+',toolbar=no,menubar=no,scrollbars=auto,resizable=no,location=no,status=no');
+
+<div id="home">
+  <main class="index__main">
+    <div class="main__content">
+      <div class="hot-remend__list">
+        <div
+          class="hot-remend__item"
+          v-for="item in productList"
+          @click="handleProduct(item)"
+        >
+          <img :src="item.imgSrc" width="100%"  />
+          <div class="title">{{ item.title }}</div>
+          <div class="play">{{ item.play}}</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="index__footer">
+    <div
+      class="item"
+      v-for="item in page"
+      :class="item.name === currentPageName ? 'active': ''"
+      @click="handleNavChange(item)"
+    >
+      <img :src="item.icon" />
+      <div class="name">{{ item.label }}</div>
+    </div>
+  </footer>
+</div>
