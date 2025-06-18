@@ -52,69 +52,12 @@ const aboutUs = StudioWidgetWrapper.extend({
         data() {
           return {
             widgetBasePath,
-            loading: false,
             currentPageName: "aboutUs",
-            page: [
-              {
-                id: 0,
-                label: this.$t("aboutUs"),
-                name: "aboutUs",
-                icon: `${widgetBasePath}images/home.png`,
-                iconActive: `${widgetBasePath}images/homeInactives.png`,
-              },
-              {
-                id: 1,
-                label: this.$t("my"),
-                name: "my",
-                icon: `${widgetBasePath}images/my.png`,
-                iconActive: `${widgetBasePath}images/myInactives.png`,
-              },
-            ],
-            productList: [],
-            faqs: [
-              {
-                question: "Question 1",
-                answer: "This is the answer to question 1.",
-                open: false,
-              },
-              {
-                question: "Question 2",
-                answer: "This is the answer to question 2.",
-                open: false,
-              },
-              {
-                question: "Question 3",
-                answer: "This is the answer to question 3.",
-                open: false,
-              },
-              {
-                question: "Question 4",
-                answer: "This is the answer to question 4.",
-                open: false,
-              },
-              {
-                question: "Question 5",
-                answer: "This is the answer to question 5.",
-                open: false,
-              },
-            ],
           };
         },
-        mounted() {
-          this.loadData();
-        },
+        mounted() {},
 
-        methods: {
-          toggleFaq(index) {
-            this.faqs[index].open = !this.faqs[index].open;
-          },
-          goBack() {
-            alert("Navigating back...");
-          },
-          viewTerms() {
-            alert("Navigating to Terms and Conditions...");
-          },
-        },
+        methods: {},
       });
       app.use(i18n);
       app.use(ElementPlus);
